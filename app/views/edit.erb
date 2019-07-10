@@ -1,5 +1,6 @@
-<form method="post" action="/articles">
-  Title:<input id="hidden" type="hidden" name="_method" value="PATCH">
-  Content:<input id="hidden" type="hidden" name="_method" value="PATCH">
+<form method="post" action="/articles/<%= @article.id %>/edit">
+  <input id="hidden" type="hidden" name="_method" value="PATCH">
+  Title:
+  Content:
   <input type="submit" name="Submit">
 </form>
